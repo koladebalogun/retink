@@ -1,0 +1,493 @@
+@import '../../mixin';
+
+.section1-container{
+    @include sections;
+    background: #fff;
+    margin-top: 70px;
+    
+    .nav-wrapper{
+        margin-top: 50px;
+        margin-left: 100px;
+        @include nav-wrapper;
+        position: relative;
+        overflow: hidden; 
+
+        .first-text{
+            top: 5%;
+            left: 30%;
+            color: #000;
+            @include main-texts;
+        }        
+        .nav-item{
+            @include nav-item;
+            h1{
+                color: dimgray;
+                @include h1;
+
+                span{
+                    @include span;
+                }
+            }
+            
+        }
+        .inner-text{
+            color: #000;
+            position: absolute;
+            bottom: 35px;
+            letter-spacing: 3px;
+            left: 0px;
+           
+            h2{
+                font-size: 24px;
+                font-weight: 600;
+
+            }
+        }
+
+       
+        .nav-item span:before{
+            @include before;
+            color: wheat;
+        }
+
+        .nav-item span:hover:before{
+            width: 100%;
+        }
+
+    }
+    
+    .project-preview-wrapper{
+        @include preview;
+        .project-preview1{
+            position: fixed;
+            top: 12%;
+            left: 50%;
+            width: 0;
+            height: 400px;
+            overflow: hidden;
+            background: url(../../asset/easy-creation.png) no-repeat 50% 50%;
+            background-size: contain;
+            
+        }
+    }
+
+    .scroll{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        h3{
+            color: #000;
+            span{
+                font-size: 18px;
+                font-weight: 800;
+                text-transform: uppercase;
+                animation: animate 1s ease-in-out infinite;
+            }
+        }
+    }
+
+}
+
+@keyframes Rotation{
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes mover{
+    0%,100%{
+        bottom: 0;
+    }
+
+    60%{
+        bottom: 60px;
+    }
+}
+span:nth-child(1){
+    animation-delay: 0.2s;
+}
+
+.section2-container{
+    background: grey;
+    @include sections;
+
+    .nav2-container{
+        margin-top: 240px;
+        margin-left: 100px;
+        @include nav-wrapper;
+        position: relative;
+        
+        .second-text{
+            position: absolute;
+            top: -85px;
+            left: 170px;
+            transform: translate(-50% -50%);
+            color: #ffff;
+            font-size: 10px;
+            transition: 0.5s ease-out;
+            animation: Rotate 8s linear infinite;
+            font-weight: 400;
+            
+        } 
+        .nav2-list{
+            .item2{
+                display: block;
+                user-select: none;
+                margin: 120px 0;
+                h1{
+                    color: #000;
+                    @include h1;
+                    
+                    span{
+                        @include span;
+                    }
+                }
+            }
+            
+            .item2 span:before{
+                @include before;
+                color: #ffff;
+                
+            }
+    
+            .item2 span:hover:before{
+                width: 100%;
+            }
+        }
+        .inner-text2{
+            color: #ffff;
+            position: absolute;
+            bottom: -120px;
+            letter-spacing: 3px;
+            left: 0px;
+            line-height: 30px;
+            width: 100%;
+            h2{
+                font-size: 24px;
+                width: 30%;
+                font-weight: 600;
+
+            }
+        }
+
+        
+    }
+    .project-preview-wrapper2{
+        @include preview;
+        .project-preview2{
+            position: fixed;
+            top: 25%;
+            left: 35%;
+            width: 0px;
+            height: 400px;
+            overflow: hidden;
+            background: url(../../asset/fast-delivery.png) no-repeat 50% 50%;
+            background-size: contain;
+           
+        }
+    }
+
+    .scroll2{
+        position: absolute;
+        top: 450px;
+        left: 40%;
+        transform: translate(-50% -50%);
+        
+       
+        h3{
+            color: #ffff;
+            span{
+                font-size: 18px;
+                font-weight: 800;
+                text-transform: uppercase;
+                animation: animate 1s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+
+.section3-container{
+    background: #000;
+    @include sections;
+
+    .nav3-container{
+        margin-top: 240px;
+        margin-left: 100px;
+        @include nav-wrapper;
+        position: absolute; 
+        
+        .third-text{
+            top: 5%;
+            left: 65%;
+            color: #ffff;
+            @include main-texts;
+            
+        }
+        .nav3-list{
+            .item3{
+                @include nav-item;
+                h1{
+                    color: dimgray;
+                    @include h1;
+
+                    span{
+                        @include span;
+                    }
+                }
+            }
+            .item3 span:before{
+                @include before;
+                color: #ffff;
+                
+            }
+    
+            .item3 span:hover:before{
+                width: 100%;
+            }
+        }
+        .inner-text3{
+            color: #ffff;
+            position: absolute;
+            bottom: -40px;
+            letter-spacing: 3px;
+            left: 0px;
+            line-height: 30px;
+            
+            h2{
+                font-size: 24px;
+                font-weight: 600;
+                
+            }
+        }
+
+    }
+
+    .project-preview-wrapper3{
+        @include preview;
+        .project-preview3{
+            position: fixed;
+            top: 25%;
+            left: 35%;
+            width: 0px;
+            height: 400px;
+            overflow: hidden;
+            background: url(../../asset//AI.png) no-repeat 50% 50%;
+            background-size: contain;
+            
+        }
+    }
+    .scroll3{
+        position: absolute;
+        bottom: -130px;
+        left: 70%;
+        transform: translate(-50% -50%);
+        
+        h3{
+            color: #ffff;
+            span{
+                font-size: 18px;
+                font-weight: 800;
+                text-transform: uppercase;
+                animation: animate 1s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes Rotate{
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.section4-container{
+    background: darkslategray;
+    @include sections;
+
+    .nav4-container{
+        margin-top: 240px;
+        margin-left: 100px;
+        @include nav-wrapper;
+        position: absolute; 
+        
+        .fourth-text{
+            top: 5%;
+            left: 65%;
+            color: #ffff;
+            @include main-texts;
+            
+        }
+        .nav4-list{
+            .item4{
+                @include nav-item;
+                h1{
+                    color: dimgray;
+                    @include h1;
+                    
+                    span{
+                        @include span;
+                    }
+                }
+            }
+            .item4 span:before{
+                @include before;
+                color: #ffff;
+                
+            }
+    
+            .item4 span:hover:before{
+                width: 100%;
+            }
+        }
+        .inner-text4{
+            color: #ffff;
+            position: absolute;
+            bottom: 35px;
+            letter-spacing: 3px;
+            left: 0px;
+            line-height: 20px;
+            
+            h2{
+                font-size: 24px;
+                font-weight: 600;
+                line-height:40px;
+                
+            }
+        }
+
+    }
+
+    .project-preview-wrapper4{
+        @include preview;
+        .project-preview4{
+            position: fixed;
+            top: 25%;
+            left: 35%;
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            background: url(../../asset/affordable-pricing.png) no-repeat 50% 50%;
+            background-size: contain;
+            
+        }
+    }
+    .scroll4{
+        position: absolute;
+        bottom: -110px;
+        left: 80%;
+        transform: translate(-50% -50%);
+        
+        h3{
+            color: #ffff;
+            span{
+                font-size: 18px;
+                font-weight: 800;
+                text-transform: uppercase;
+                animation: animate 1s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes Rotate{
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.section5-container{
+    @include sections;
+    background: darksalmon;
+    .nav5-container{
+        margin-top: 240px;
+        margin-left: 100px;
+        @include nav-wrapper;
+        position: absolute; 
+        
+        .fifth-text{
+            top: 5%;
+            left: 50%;
+            color: #ffff;
+            @include main-texts;
+           
+        }
+        .nav5-list{
+            .item5{
+                @include nav-item;
+                h1{
+                    color: dimgray;
+                    @include h1;
+                    
+                    span{
+                        @include span;
+                    }
+                }
+            }
+            .item5 span:before{
+                @include before;
+                color: #ffff;
+            }
+    
+            .item5 span:hover:before{
+                width: 100%;
+            }
+        }
+        .inner-text5{
+            color: #ffff;
+            position: absolute;
+            bottom: -25px;
+            letter-spacing: 3px;
+            left: 0px;
+            line-height: 20px;
+            
+            h2{
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 40px;
+                
+            }
+        }
+
+    }
+    .project-preview-wrapper5{
+        @include preview;
+        .project-preview5{
+            position: fixed;
+            top: 25%;
+            left: 35%;
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            background: url(../../asset/quality-control.png) no-repeat 50% 50%;
+            background-size: contain;
+            
+        }
+    }
+    
+    
+}
+
+@keyframes Rotate{
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}

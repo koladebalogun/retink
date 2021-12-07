@@ -1,0 +1,56 @@
+@mixin sections {
+    overflow: hidden;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+}
+
+@mixin nav-wrapper {
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+@mixin main-texts {
+    position: absolute;
+    transform: translate(-50% -50%);
+    font-size: 10px;
+    transition: 0.5s ease-out;
+    animation: Rotate 8s linear infinite;
+    font-weight: 400;
+}
+
+@mixin nav-item {
+    display: block;
+    user-select: none;
+    margin: 120px 0;
+}
+
+@mixin h1 {
+    font-size: 100px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+@mixin span {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+
+@mixin before{
+    width: 0;
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.9s cubic-bezier(0.84, 0, 0.08, 0.99); 
+}
+
+@mixin preview {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center; 
+}

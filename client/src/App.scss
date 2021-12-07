@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Nunito+Sans:wght@200;400;700&family=Nunito:wght@200;300;400;600;800&display=swap');
+
+@import './components/Home/home';
+@import './components/Navbar/navbar';
+@import './components/AboutUs/aboutus';
+@import './components/Services/services';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
